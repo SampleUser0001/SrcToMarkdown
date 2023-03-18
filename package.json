@@ -1,0 +1,14 @@
+{
+  "name": "srctomarkdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "clean": "rm -fR ./lib",
+    "build": "npm run clean && mkdir ./lib && cp ./src/* ./lib",
+    "exec" : "node ./lib/index.js $npm_config_src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
