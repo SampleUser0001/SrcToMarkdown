@@ -2,3 +2,5 @@
 
 /export
 !/export/.gitkeep
+
+/node_modules
