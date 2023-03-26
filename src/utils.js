@@ -35,6 +35,11 @@ ${src}
 
 }
 
+const printToClipboard = (filepath) => {
+    console.info(`cat ${filepath} | xsel --clipboard --input`);
+}
+
 module.exports.getExportPath = getExportPath;
 module.exports.getFileList = getFileList;
 module.exports.getSourceText = getSourceText;
+module.exports.printToClipboard = printToClipboard;
