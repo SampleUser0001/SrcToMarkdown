@@ -13,7 +13,10 @@ function main() {
         .map(srcPath => {
             const sourceText = utils.getSourceText(srcPath, srcHome, markdownIndex);
             fs.appendFileSync(exportPath, sourceText);
-        });
+    });
+
+    utils.printToClipboard(exportPath);
+
 }
 
 if (require.main === module) {
